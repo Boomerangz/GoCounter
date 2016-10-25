@@ -10,9 +10,10 @@ import (
 )
 
 const chanelSize = 10
+const K = 5
 
 func main() {
-	te := InitTaskExecutor(chanelSize, task)
+	te := InitTaskExecutor(K, chanelSize, task)
 
 
 	//read stdin row by row and pushing strings to task executor
